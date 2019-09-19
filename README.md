@@ -15,4 +15,4 @@
 
 [Nkust](https://www.nkust.edu.tw/)
 
-![Paradise](Smoke weed everyday.jpg)
+![Paradise](Weed.jpg)
