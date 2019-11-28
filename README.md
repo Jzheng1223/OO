@@ -62,21 +62,17 @@ public class app11_1
     }
 }
 
-
-
-public interface Shape {  // Use keyword "interface" instead of "class"
-   // List of public abstract methods to be implemented by its subclasses
-   // All methods in interface are "public abstract".
-   // "protected", "private" and "package" methods are NOT allowed.
+```
+```js
+public interface Shape {  
    double getArea();
 }
-// The subclass Rectangle needs to implement all the abstract methods in Shape
-public class Rectangle implements Shape {  // using keyword "implements" instead of "extends"
-   // Private member variables
-   private int length;
-   private int width;
 
-   // Constructor
+public class Rectangle implements Shape {  /
+   private double length;
+   private double width;
+
+   
    public Rectangle(int length, int width) {
       this.length = length;
       this.width = width;
@@ -87,19 +83,19 @@ public class Rectangle implements Shape {  // using keyword "implements" instead
       return "Rectangle[length=" + length + ",width=" + width + "]";
    }
 
-   // Need to implement all the abstract methods defined in the interface
+   
    @Override
    public double getArea() {
       return length * width;
    }
 }
-// The subclass Triangle need to implement all the abstract methods in Shape
+
 public class Triangle implements Shape {
    // Private member variables
-   private int base;
-   private int height;
+   private double base;
+   private double height;
 
-   // Constructor
+   
    public Triangle(int base, int height) {
       this.base = base;
       this.height = height;
@@ -110,9 +106,10 @@ public class Triangle implements Shape {
       return "Triangle[base=" + base + ",height=" + height + "]";
    }
 
-   // Need to implement all the abstract methods defined in the interface
+  
    @Override
    public double getArea() {
       return 0.5 * base * height;
    }
 }
+```
