@@ -61,3 +61,58 @@ public class app11_1
         trian.show();
     }
 }
+
+
+
+public interface Shape {  // Use keyword "interface" instead of "class"
+   // List of public abstract methods to be implemented by its subclasses
+   // All methods in interface are "public abstract".
+   // "protected", "private" and "package" methods are NOT allowed.
+   double getArea();
+}
+// The subclass Rectangle needs to implement all the abstract methods in Shape
+public class Rectangle implements Shape {  // using keyword "implements" instead of "extends"
+   // Private member variables
+   private int length;
+   private int width;
+
+   // Constructor
+   public Rectangle(int length, int width) {
+      this.length = length;
+      this.width = width;
+   }
+
+   @Override
+   public String toString() {
+      return "Rectangle[length=" + length + ",width=" + width + "]";
+   }
+
+   // Need to implement all the abstract methods defined in the interface
+   @Override
+   public double getArea() {
+      return length * width;
+   }
+}
+// The subclass Triangle need to implement all the abstract methods in Shape
+public class Triangle implements Shape {
+   // Private member variables
+   private int base;
+   private int height;
+
+   // Constructor
+   public Triangle(int base, int height) {
+      this.base = base;
+      this.height = height;
+   }
+
+   @Override
+   public String toString() {
+      return "Triangle[base=" + base + ",height=" + height + "]";
+   }
+
+   // Need to implement all the abstract methods defined in the interface
+   @Override
+   public double getArea() {
+      return 0.5 * base * height;
+   }
+}
